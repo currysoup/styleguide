@@ -10,7 +10,7 @@ The style guide itself makes no changes to the document, it just enables the use
 
 ```
             Makes edits to document               Pushes Text to...
-  ( ͡° ͜ʖ ͡°)  -------------------> +----------+ -----------------> +------------+
+  ¯\(°_o)/¯ -------------------> +----------+ -----------------> +------------+
     User                         | Composer |                    | styleguide |
             <------------------- +----------+ <----------------- +------------+
            Suggests/Warns to user           Lists violations to...
