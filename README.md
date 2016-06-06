@@ -9,11 +9,11 @@ A `styleguide` service checks over body of text and applies predetermined rules.
 The style guide itself makes no changes to the document, it just enables the user to make potentially complex edits in an automated fashion. This model decouples style suggestions from document editing meaning future collabaration features in Composer should not interact badly with the style guide.
 
 ```
-            Makes edits to document               Pushes Text to...
-  ¯\(°_o)/¯ -------------------> +----------+ -----------------> +------------+
-    User                         | Composer |                    | styleguide |
-            <------------------- +----------+ <----------------- +------------+
-           Suggests/Warns to user           Lists violations to...
+            Makes edits to document +----------+  Pushes Text to...     +------------+
+  ¯\(°_o)/¯ ----------------------> |          | ---------------------> |            |
+    User                            | Composer |                        | styleguide |
+            <---------------------- |          | <--------------------- |            |
+           Suggests/Warns to user   +----------+ Lists violations to... +------------+
 ```
 
 ## Violations
@@ -76,7 +76,7 @@ When referring to a proper noun spelling should be in the local variety of Engli
 
 Similar to find and replace, but without a concrete 'right' answer, useful in cases where understanding the context of the phrase might be difficult.
 
-### Associated Word Requirements
+### Associated Requirements
 
 > If a string is found but another is not, raise a warning.
 
